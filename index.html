@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- Water CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+  <!-- CSS -->
+  <style>
+    .posts {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1rem;
+      width: 100%;
+    }
+
+    .post {
+      --p: 1.5rem;
+      padding-inline: var(--p);
+      padding-bottom: var(--p);
+      border: .25rem solid blue;
+      text-transform: capitalize;
+    }
+  </style>
+</head>
+<body>
+  <div id="app">
+    <h1>Posts</h1>
+    <h2>Todos los posts: <span id="numberPosts"></span></h2>
+    <section class="posts" id="posts"></section>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
